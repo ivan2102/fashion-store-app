@@ -94,6 +94,14 @@ function Header({darkMode, handleThemeChange}: Props) {
                      {title.toUpperCase()} 
                   </ListItem>
               ))}
+               {user && user.roles?.includes('Admin') &&
+              <ListItem
+              component={NavLink}
+              to={'/inventory'}
+              sx={navStyles}
+              >
+              PRODUCTS
+              </ListItem>}
           </List>
 
          <Box display='flex' alignItems='center'>

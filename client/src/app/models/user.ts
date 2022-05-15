@@ -4,5 +4,6 @@ export interface User {
 
     email: string;
     token: string;
-    cart?: Cart
+    cart?: Cart;
+    roles?: string[];
 }
